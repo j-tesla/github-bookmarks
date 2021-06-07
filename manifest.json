@@ -1,0 +1,17 @@
+{
+  "name": "GitHub Bookmarks",
+  "description": "Bookmark your favourite repos!",
+  "version": "0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background_wrapper.js"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["githubScript.js"],
+      "css": ["githubStyle.css"]
+    }
+  ]
+}
