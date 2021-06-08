@@ -5,7 +5,7 @@ const getBookmarks = () => {
         return reject(chrome.runtime.lastError);
       }
 
-      if (result) {
+      if (result.bookmarks) {
         resolve(result.bookmarks);
       }
       resolve([]);
