@@ -1,17 +1,33 @@
 {
   "name": "GitHub Bookmarks",
   "description": "Bookmark your favourite repos!",
-  "version": "0.1",
+  "version": "0.0.1",
   "manifest_version": 3,
   "background": {
     "service_worker": "background_wrapper.js"
   },
-  "permissions": ["storage"],
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
   "content_scripts": [
     {
-      "matches": ["*://github.com/*"],
-      "js": ["githubScript.js"],
-      "css": ["githubStyle.css"]
+      "matches": [
+        "*://github.com/*"
+      ],
+      "js": [
+        "assets/js/bookmarksStore.js",
+        "assets/js/githubScript.js"
+      ],
+      "css": [
+        "assets/css/githubStyle.css"
+      ]
     }
-  ]
+  ],
+  "action": {
+    "default_title": "GitHub Bookmarks"
+  },
+  "content_security_policy": {
+    "content_scripts": "script-src' nonce-r@ndom"
+  }
 }

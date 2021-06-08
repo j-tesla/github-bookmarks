@@ -36,34 +36,6 @@ const addBookMarkButton = (actions) => {
   actions.appendChild(bookmarkElement());
 }
 
-const getBookmarks = () => {
-  return new Promise((resolve, reject) => {
-    chrome.storage.sync.get(["bookmarks"], (result) => {
-      if (chrome.runtime.lastError) {
-        return reject(chrome.runtime.lastError);
-      }
-
-      if (result) {
-        resolve(result.bookmarks);
-      }
-      resolve([]);
-    });
-  });
-}
-
-const setBookmarks = (repos) => {
-  return new Promise((resolve, reject) => {
-    chrome.storage.sync.set({"bookmarks": repos}, () => {
-      if (chrome.runtime.lastError) {
-        return reject(chrome.runtime.lastError);
-      }
-
-      resolve();
-    });
-  });
-}
-
-
 const getRepo = () => {
   const metaTags = document.getElementsByTagName('meta');
 
