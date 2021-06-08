@@ -4,6 +4,9 @@ const getCardHTML = async (repo) => {
     const response = await fetch(`https://api.github.com/repos/${repo}`);
     const response_json = await response.json();
     description = response_json.description;
+    if (!description) {
+      description = "";
+    }
   } catch (e) {
     console.error(e);
     return null;
