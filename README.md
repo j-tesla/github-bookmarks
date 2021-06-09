@@ -1,4 +1,4 @@
-![GitHub][7]
+![License][7] ![GitHub last commit][8]
 
 # GitHub Bookmarks
 
@@ -34,3 +34,4 @@ GitHub Bookmarks is a chrome extension which lets you bookmark your favorite rep
 [5]: https://user-images.githubusercontent.com/58279279/121198847-13533c80-c890-11eb-84af-a38e055606bb.png
 [6]: https://github.com/
 [7]: https://img.shields.io/github/license/j-tesla/github-bookmarks?style=flat-square
+[8]: https://img.shields.io/github/last-commit/j-tesla/github-bookmarks?style=flat-square
