@@ -20,6 +20,7 @@ const setBookmarks = (repos) => {
         return reject(chrome.runtime.lastError);
       }
 
+      chrome.runtime.sendMessage({type: 'BOOKMARKS_UPDATED'});
       resolve();
     });
   });

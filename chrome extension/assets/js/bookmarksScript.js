@@ -81,6 +81,12 @@ const main = async () => {
   }
 }
 
+const messageListener = async (message, _sender, _sendResponse) => {
+  if (message.type === "BOOKMARKS_UPDATED") {
+    location.reload();
+  }
+}
+
 main();
 
-getCardHTML("j-tesla/space-shooter");
+chrome.runtime.onMessage.addListener(messageListener);
