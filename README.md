@@ -2,8 +2,7 @@
 
 # GitHub Bookmarks
 
-GitHub Bookmarks is a chrome extension which lets you bookmark your favorite repos on GitHub without your followers knowing. 😏
-*It's okay* if you like PHP, but no one should know right?! 😜
+GitHub Bookmarks is a chrome extension which lets you bookmark repos on GitHub you may want to get back, privately. You could just start the repos you want to get back but we star many repos to appreciate them and often we search for the repos we want from the big bag of starred repos. Hence, You can maintain bookmarks for repos you are working on or want to get back with this extension. 😄
 
 -----
 
